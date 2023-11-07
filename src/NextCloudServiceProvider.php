@@ -1,10 +1,10 @@
 <?php
 
-namespace Toka\NextCloudStorage;
+namespace WalberJefferson\NextCloudStorage;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\ServiceProvider;
-use Toka\NextCloudStorage\NextCloudAdapter;
+use WalberJefferson\NextCloudStorage\NextCloudAdapter;
 use League\Flysystem\Filesystem;
 use Sabre\DAV\Client;
 

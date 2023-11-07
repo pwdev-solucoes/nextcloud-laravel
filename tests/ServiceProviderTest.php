@@ -1,10 +1,10 @@
 <?php
 
-namespace Toka\NextCloudStorage\Tests;
+namespace WalberJefferson\NextCloudStorage\Tests;
 
 use Illuminate\Support\Facades\Storage;
-use Toka\NextCloudStorage\NextCloudAdapter;
-use Toka\NextCloudStorage\NextCloudServiceProvider;
+use WalberJefferson\NextCloudStorage\NextCloudAdapter;
+use WalberJefferson\NextCloudStorage\NextCloudServiceProvider;
 
 class ServiceProviderTest extends \Orchestra\Testbench\TestCase
 {

@@ -19,7 +19,7 @@ Register the service provider in your app.php config file:
 
 'providers' => [
     ...
-    Toka\NextCloudStorage\NextCloudServiceProvider::class
+    WalberJefferson\NextCloudStorage\NextCloudServiceProvider::class
     ...
 ];
 ```
