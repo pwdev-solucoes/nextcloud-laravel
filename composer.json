@@ -1,38 +1,38 @@
 {
-    "name": "toka/laravel-nextcloud",
+    "name": "walberjefferson/laravel-nextcloud",
     "type": "library",
     "version": "1.0.3",
     "description": "Laravel NextCloud Filesystem",
     "keywords": [
-        "toka",
+        "walberjefferson",
         "laravel-nextcloud"
     ],
     "homepage": "https://github.com/giran/laravel-nextcloud",
     "license": "MIT",
     "authors": [
         {
-            "name": "Nic",
+            "name": "Walber Jefferson",
             "role": "Developer"
         }
     ],
     "require": {
         "php": ">=7.3",
-        "illuminate/filesystem": "5.*||6.*||7.*||8.*",
+        "illuminate/filesystem": "5.*||6.*||7.*||8.*||9.*",
         "league/flysystem-webdav": "^1.0.8",
         "jakeasmith/http_build_url": "^1"
     },
     "require-dev": {
         "orchestra/testbench": "^3.0",
-        "phpunit/phpunit": "~5.0|~6.0|~7.0|~8.0"
+        "phpunit/phpunit": "~5.0|~6.0|~7.0|~8.0|~9.0"
     },
     "autoload": {
         "psr-4": {
-            "Toka\\NextCloudStorage\\": "src"
+            "WalberJefferson\\NextCloudStorage\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Toka\\NextCloudStorage\\Tests\\": "tests"
+            "WalberJefferson\\NextCloudStorage\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -41,7 +41,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Toka\\NextCloudStorage\\NextCloudServiceProvider"
+                "WalberJefferson\\NextCloudStorage\\NextCloudServiceProvider"
             ]
         }
     }
