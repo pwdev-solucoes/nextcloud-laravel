@@ -1,10 +1,10 @@
 <?php
 
-namespace WalberJefferson\NextCloudStorage;
+namespace PWDev\NextCloudStorage;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\ServiceProvider;
-use WalberJefferson\NextCloudStorage\NextCloudAdapter;
+use PWDev\NextCloudStorage\NextCloudAdapter;
 use League\Flysystem\Filesystem;
 use Sabre\DAV\Client;
 

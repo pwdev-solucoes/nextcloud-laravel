@@ -19,7 +19,7 @@ Register the service provider in your app.php config file:
 
 'providers' => [
     ...
-    WalberJefferson\NextCloudStorage\NextCloudServiceProvider::class
+    PWDev\NextCloudStorage\NextCloudServiceProvider::class
     ...
 ];
 ```

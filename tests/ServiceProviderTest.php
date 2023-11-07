@@ -1,10 +1,10 @@
 <?php
 
-namespace WalberJefferson\NextCloudStorage\Tests;
+namespace PWDev\NextCloudStorage\Tests;
 
 use Illuminate\Support\Facades\Storage;
-use WalberJefferson\NextCloudStorage\NextCloudAdapter;
-use WalberJefferson\NextCloudStorage\NextCloudServiceProvider;
+use PWDev\NextCloudStorage\NextCloudAdapter;
+use PWDev\NextCloudStorage\NextCloudServiceProvider;
 
 class ServiceProviderTest extends \Orchestra\Testbench\TestCase
 {

@@ -1,10 +1,10 @@
 {
-    "name": "walberjefferson/laravel-nextcloud",
+    "name": "pwdev/laravel-nextcloud",
     "type": "library",
     "version": "1.0.3",
     "description": "Laravel NextCloud Filesystem",
     "keywords": [
-        "walberjefferson",
+        "pwdev",
         "laravel-nextcloud"
     ],
     "homepage": "https://github.com/giran/laravel-nextcloud",
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "WalberJefferson\\NextCloudStorage\\": "src"
+            "PWDev\\NextCloudStorage\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "WalberJefferson\\NextCloudStorage\\Tests\\": "tests"
+            "PWDev\\NextCloudStorage\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -41,7 +41,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "WalberJefferson\\NextCloudStorage\\NextCloudServiceProvider"
+                "PWDev\\NextCloudStorage\\NextCloudServiceProvider"
             ]
         }
     }

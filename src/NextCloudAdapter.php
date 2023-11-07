@@ -1,6 +1,6 @@
 <?php
 
-namespace WalberJefferson\NextCloudStorage;
+namespace PWDev\NextCloudStorage;
 
 use League\Flysystem\WebDAV\WebDAVAdapter;
 use Sabre\Dav\Client;
