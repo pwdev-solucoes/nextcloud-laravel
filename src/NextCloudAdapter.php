@@ -36,21 +36,21 @@ class NextCloudAdapter extends WebDAVAdapter
         parent::__construct($client, $pathPrefix);
     }
 
-    protected function isDirectory(array $object)
-    {
-        if (isset($object['{DAV:}resourcetype']) && $object['{DAV:}resourcetype'] instanceof ResourceType && $object['{DAV:}resourcetype']->is('{DAV:}collection')) {
-            return true;
-        }
+//    protected function isDirectory(array $object)
+//    {
+//        if (isset($object['{DAV:}resourcetype']) && $object['{DAV:}resourcetype'] instanceof ResourceType && $object['{DAV:}resourcetype']->is('{DAV:}collection')) {
+//            return true;
+//        }
+//
+//        return parent::isDirectory($object);
+//    }
 
-        return parent::isDirectory($object);
-    }
-
-    public function getUrl($path)
-    {
-        $location = $this->applyPathPrefix($this->encodePath($path));
-        $urlParts = parse_url($this->client->getAbsoluteUrl($location));
-        $urlParts['user'] = $this->config['userName'];
-        $urlParts['pass'] = $this->config['password'];
-        return http_build_url($urlParts);
-    }
+//    public function getUrl($path)
+//    {
+//        $location = $this->applyPathPrefix($this->encodePath($path));
+//        $urlParts = parse_url($this->client->getAbsoluteUrl($location));
+//        $urlParts['user'] = $this->config['userName'];
+//        $urlParts['pass'] = $this->config['password'];
+//        return http_build_url($urlParts);
+//    }
 }
