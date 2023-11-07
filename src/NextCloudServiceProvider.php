@@ -16,11 +16,11 @@ class NextCloudServiceProvider extends ServiceProvider
         Storage::extend('nextcloud', function ($app, $config) {
 
 
-//            $pathPrefix = 'remote.php/dav/files/' . $config['userName'];
-//            if (array_key_exists('pathPrefix', $config)) {
-//                $pathPrefix = rtrim($config['pathPrefix'], '/') . '/' . $pathPrefix;
-//            }
-            $pathPrefix = array_key_exists('pathPrefix', $config) ? $config['pathPrefix'] : null;
+            $pathPrefix = 'remote.php/dav/files/' . $config['userName'];
+            if (array_key_exists('pathPrefix', $config)) {
+                $pathPrefix = rtrim($config['pathPrefix'], '/') . '/' . $pathPrefix;
+            }
+//            $pathPrefix = array_key_exists('pathPrefix', $config) ? $config['pathPrefix'] : null;
             $client = new Client([
                 'baseUri' => $config['baseUri'],
                 'userName' => $config['userName'],
